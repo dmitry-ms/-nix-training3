@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registration</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex align-items-top justify-content-end vh-90">
+          <form class="m-5 needs-validation" novalidate>
+            <h2 class="text-center m-5 ">Регистрация</h2>
+            <div class="row g-2 mb-3">
+              <div class="form-floating position-relative col-md">
+                <input type="text" class="form-control" id="floatingFirstName" placeholder="First name" aria-label="First name" maxlength="25" required>
+                <label for="floatingFirstName" class="form-label">Имя</label>
+                <div class="invalid-tooltip">
+                  Введите имя
+                </div>
+              </div>
+              <div class="form-floating position-relative col-md">
+                <input type="text" class="form-control" id="floatingLastName" placeholder="Last name" aria-label="Last name" maxlength="25" required>
+                <label for="floatingLastName" class="form-label">Фамилия</label>
+                <div class="invalid-tooltip">
+                  Введите фамилию
+                </div>
+              </div>
+            </div>
+            <div class="form-floating position-relative mb-3">
+              <input type="email" class="form-control" id="floatingEmail" aria-describedby="emailHelp" placeholder="name@example.com" maxlength="35" required>
+              <label for="floatingEmail" class="form-label">Адрес електронной почты</label>  
+              <div class="invalid-tooltip">
+                Введите адрес электронной почты 
+              </div>        
+            </div>
+            <div class="form-floating position-relative mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" maxlength="45" required>
+              <label for="floatingPassword" class="form-label">Пароль</label>
+              <div class="invalid-tooltip">
+                Введите пароль. Пароль должен содержать минимум: 6 символов, 1 цифру и 1 заглавную букву.
+              </div>
+            </div>
+            <div class="form-floating position-relative mb-3">
+              <input type="password" class="form-control" id="floatingRepeatPassword" placeholder="Password" oninput="check(this)" required>
+              <label for="floatingRepeatPassword" class="form-label">Повторите пароль</label>
+              <div class="invalid-tooltip">
+                Пароли не совпадают
+              </div>
+            </div>
+            <div class="mb-3 position-relative form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1">* Я соглашаюсь с <a href="">правилами использования сервиса</a> , а также с передачей и обработкой моих данных </label>
+              <div class="invalid-tooltip">
+                Необходимо подтвердить ваше согласие
+              </div>
+            </div>
+            <div class="d-grid d-md-flex justify-content-md-end"">
+              <button type="submit" class="btn btn-primary">
+                Регистрация
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+            </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <img class="backGroundImg" src="/img/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" alt="backgroungImg">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

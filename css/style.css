@@ -1,0 +1,25 @@
+
+
+.backGroundImg{
+  top: 0;
+  position: fixed;
+  height: 100vh;
+}
+.carImg{
+  max-width: 350px;
+  max-height: 250px;
+  margin-bottom: 30px;
+}
+
+.listOfCars{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+.carItem{
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
